@@ -7,8 +7,8 @@ Feature: New user sign up
     Given Customer data is available for new user
 
   Scenario: User should be able to create a new account for the application
-    Given Matt, a new customer navigates to application sign in page
-    When Matt registers as a new user of the application
-    Then Matt should get logged into the application
-    And Matt should be able to view his account page
+    Given Luke, a new customer navigates to application sign in page
+    When Luke registers as a new user of the application
+    Then Luke should get logged into the application
+    And Luke should be able to view his account page
     And view the sign out option

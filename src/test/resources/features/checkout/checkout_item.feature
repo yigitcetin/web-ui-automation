@@ -1,14 +1,14 @@
-Feature: Checkout item from cart
+Feature: Add an item and checkout from cart
   As an existing customer of the shopping website,
-  I should be able to add products to cart, proceed to checkout
+  I should be able to add products to cart from category and proceed to checkout
   And confirm my order post payment
 
-  Scenario: User should be able to checkout, pay and complete an order
+  Scenario: User should be able to add a product, checkout, pay and complete an order
     Given Darth Vader, an existing customer ordered:
       | Section | Product                     |
-      | Women   | Faded Short Sleeve T-shirts |
+      | Women   | Blouse |
     And navigated to payments page
-    When Darth Vader opts "Pay by bank wire" payment method
+    When Darth Vader choose "Pay by bank wire" payment method
     And confirms the order
     Then Darth Vader should be taken to order confirmation page
     And order should be completed successfully

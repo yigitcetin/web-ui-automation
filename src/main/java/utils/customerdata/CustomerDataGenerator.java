@@ -10,7 +10,7 @@ public class CustomerDataGenerator {
 
     static {
         Faker fake = new Faker();
-        customerDataDTO.setFirstName("Matt");
+        customerDataDTO.setFirstName("Luke");
         customerDataDTO.setLastName(fake.name().lastName());
         customerDataDTO.setEmailId(fake.internet().emailAddress());
         customerDataDTO.setPassword(fake.number().digits(8));

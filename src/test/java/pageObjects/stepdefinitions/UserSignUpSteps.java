@@ -34,19 +34,19 @@ public class UserSignUpSteps {
   @Steps
   NavigationBarQuestions navigationBarQuestions;
 
-  @Given("Matt, a new customer navigates to application sign in page")
+  @Given("Luke, a new customer navigates to application sign in page")
   public void customer_navigates_to_application_sign_in_page() {
     navigateTo.theSignInPage();
   }
 
-  @When("Matt registers as a new user of the application")
+  @When("Luke registers as a new user of the application")
   public void register_as_a_new_user_of_the_application() {
     accountPageActions.createAccount();
     createAccountPageQuestions.verifyUserInCreateAccountPage();
     createAccountPageActions.createAccount();
   }
 
-  @Then("Matt should get logged into the application")
+  @Then("Luke should get logged into the application")
   public void user_should_get_logged_into_the_application() {
     accountPageQuestions.verifyUserInAccountPage();
     String userName = customerDataDTO.getFirstName() + " " + customerDataDTO.getLastName();

@@ -36,7 +36,7 @@ public class ProductCheckoutSteps {
     cartShippingPageActions.proceedToCheckout();
   }
 
-  @When("Darth Vader opts \"Pay by bank wire\" payment method")
+  @When("Darth Vader choose \"Pay by bank wire\" payment method")
   public void select_pay_by_bank_wire_payment_method() {
     cartPaymentPageActions.payByBankWire();
   }
