@@ -5,7 +5,6 @@ Web UI Automation BDD project using Cucumber, Serenity and Zalenium Grid
 ## Running the tests
 
 When you run ```mvn clean verify``` from the command line, all features will run in parallel separate browsers. 
-
 By default, the tests will run using Chrome. You can run them in Firefox by overriding the driver system property.
 ```
 mvn verify -Dwebdriver.driver=firefox
