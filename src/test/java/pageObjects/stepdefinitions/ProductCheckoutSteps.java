@@ -36,7 +36,7 @@ public class ProductCheckoutSteps {
     cartShippingPageActions.proceedToCheckout();
   }
 
-  @When("Joe opts \"Pay by bank wire\" payment method")
+  @When("Darth Vader opts \"Pay by bank wire\" payment method")
   public void select_pay_by_bank_wire_payment_method() {
     cartPaymentPageActions.payByBankWire();
   }
@@ -46,7 +46,7 @@ public class ProductCheckoutSteps {
     cartPaymentPageActions.confirmOrder();
   }
 
-  @Then("Joe should be taken to order confirmation page")
+  @Then("Darth Vader should be taken to order confirmation page")
   public void user_should_be_taken_to_order_confirmation_page() {
     cartPaymentPageQuestions.verifyUserInOrderConfirmationPage();
   }

@@ -31,7 +31,7 @@ public class ProductSelectionSteps {
   @Steps
   AccountPageQuestions accountPageQuestions;
 
-  @Given("Joe, an existing customer ordered:")
+  @Given("Darth Vader, an existing customer ordered:")
   public void existing_customer_ordered(List<Map<String, String>> products) {
     navigateTo.theSignInPage();
     signInPageActions.loginAsExistingUser();

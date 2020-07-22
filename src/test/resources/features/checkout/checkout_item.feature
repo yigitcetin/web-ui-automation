@@ -4,11 +4,11 @@ Feature: Checkout item from cart
   And confirm my order post payment
 
   Scenario: User should be able to checkout, pay and complete an order
-    Given Joe, an existing customer ordered:
+    Given Darth Vader, an existing customer ordered:
       | Section | Product                     |
       | Women   | Faded Short Sleeve T-shirts |
     And navigated to payments page
-    When Joe opts "Pay by bank wire" payment method
+    When Darth Vader opts "Pay by bank wire" payment method
     And confirms the order
-    Then Joe should be taken to order confirmation page
+    Then Darth Vader should be taken to order confirmation page
     And order should be completed successfully
