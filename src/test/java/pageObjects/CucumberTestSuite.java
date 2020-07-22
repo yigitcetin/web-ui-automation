@@ -1,4 +1,4 @@
-package com.serenityui.challenge;
+package pageObjects;
 
 import cucumber.api.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
